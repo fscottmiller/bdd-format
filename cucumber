@@ -1,0 +1,86 @@
+[
+  {
+    "uri": "features/sample.feature",
+    "id": "search-google",
+    "keyword": "Feature",
+    "name": "Search google",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "search-google;query-a-sample-api.",
+        "keyword": "Scenario",
+        "name": "Query a sample API.",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@api",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45297
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "we need api data",
+            "line": 11,
+            "match": {
+              "location": "features/steps/step_definition.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65976
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "we query the api",
+            "line": 12,
+            "match": {
+              "location": "features/steps/step_definition.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201681281
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "we will receive a valid response",
+            "line": 13,
+            "match": {
+              "location": "features/steps/step_definition.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 846047
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26903
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
